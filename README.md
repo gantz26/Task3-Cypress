@@ -6,6 +6,7 @@ This repository contains auto tests for verifying registration, authorization an
 
 1. Install [Visual Studio code](https://code.visualstudio.com/)
 2. Install [Node.js](https://nodejs.org/en)
+3. Sign up on [Cloud Cypress](https://cloud.cypress.io/)
 
 # Steps to install, launch and creating a report
 
@@ -30,4 +31,9 @@ npm run cy:run:chrome:default
 npm run cy:run:edge:alternative
 ```
 
-4. To view the report, open the index.html in reports folder
+4. To view the report, open the index.html in reports folder or you can record results to the Cloud ID account
+4.1 Open Cypress app and on the "Runs" tab copy the key
+4.2 Run the tests with the next command
+```
+npx cypress run --record --key <record key>
+```

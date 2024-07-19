@@ -24,3 +24,11 @@ jobs:
         run: |
           echo Cypress finished with: ${{ steps.cypress.outcome }}
           echo See results at ${{ steps.cypress.outputs.resultsUrl }}
+
+      - name: Update About section
+        run: |
+          curl -X PATCH \
+          -H "Accept: application/vnd.github.v3+json" \
+          -H "Authorization: token ${{ secrets.PERSONAL_ACCESS_TOKEN }}" \
+          https://api.github.com/repos/${{ github.repository }} \
+          -d '{"homepage": ${{ steps.cypress.outputs.resultsUrl }}, "description": "Cypress Results"}'

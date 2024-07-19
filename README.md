@@ -32,8 +32,9 @@ npm run cy:run:edge:alternative
 ```
 
 4. To view the report, open the index.html in reports folder or you can record results to the Cloud ID account
-4.1 Open Cypress app and on the "Runs" tab copy the key
-4.2 Run the tests with the next command
+    - Open Cypress app and connect the project
+    - Copy the key on the "Runs" tab
+    - Run the tests with the next command
 ```
 npx cypress run --record --key <record key>
 ```

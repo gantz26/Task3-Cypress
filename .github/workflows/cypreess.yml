@@ -31,5 +31,5 @@ jobs:
           curl -X PATCH \
           -H "Authorization: token ${{ secrets.PERSONAL_ACCESS_TOKEN }}" \
           -H "Accept: application/vnd.github.v3+json" \
-          -d '{"description": "Cypress results: ${{ steps.cypress.outputs.resultsUrl }}"}' \
+          -d '{"homepage": ${{ steps.cypress.outputs.resultsUrl }}, "description": "Cypress results"}' \
           https://api.github.com/repos/${{ github.repository }}

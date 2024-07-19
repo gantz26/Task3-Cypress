@@ -1,7 +1,15 @@
 {
   "scripts": {
-    "cy:open": "cypress open",
-    "cy:run": "cypress run"
+    "cy:open:default": "cypress open --config-file defaultCypress.config.js",
+    "cy:open:alternative": "cypress open --config-file alternativeCypress.config.js",
+    "cy:run:chrome:default": "cypress run --config-file defaultCypress.config.js --browser chrome",
+    "cy:run:chrome:headed:default": "cypress run --config-file defaultCypress.config.js --browser chrome --headed",
+    "cy:run:chrome:alternative": "cypress run --config-file alternativeCypress.config.js --browser chrome",
+    "cy:run:chrome:headed:alternative": "cypress run --config-file alternativeCypress.config.js --browser chrome --headed",
+    "cy:run:edge:default": "cypress run --config-file defaultCypress.config.js --browser edge",
+    "cy:run:edge:headed:default": "cypress run --config-file defaultCypress.config.js --browser edge --headed",
+    "cy:run:edge:alternative": "cypress run --config-file alternativeCypress.config.js --browser edge",
+    "cy:run:edge:headed:alternative": "cypress run --config-file alternativeCypress.config.js --browser edge --headed"
   },
   "devDependencies": {
     "@faker-js/faker": "^8.4.1",

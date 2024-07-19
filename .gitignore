@@ -1,0 +1,4 @@
+node_modules
+downloads
+cypress/reports
+cypress/e2e/tests/test.cy.js

@@ -12,7 +12,7 @@ This repository contains auto tests for verifying registration, authorization an
 
 1. Copy the repository
 ```
-git clone https://github.com/gantz26/Task2-Playwright.git
+git clone https://github.com/gantz26/Task3-Cypress.git
 ```
 
 2. Open this folder in Visual Studio Code and install all dependencies
